@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cướp Cờ – 12 Câu Hỏi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="teams-section">
+            <p class="choose-team">⚡ Chọn đội trả lời:</p>
+            <div class="teams">
+                <div class="team" id="team1" onclick="setCurrentTeam('team1')">
+                    <h2>Trung tâm văn hóa</h2>
+                    <p class="score">0</p>
+                    <button onclick="doubleScore('team1'); event.stopPropagation();" class="double-btn">Cược x2</button>
+                </div>
+                <div class="team" id="team2" onclick="setCurrentTeam('team2')">
+                    <h2>Quốc Pháp</h2>
+                    <p class="score">0</p>
+                    <button onclick="doubleScore('team2'); event.stopPropagation();" class="double-btn">Cược x2</button>
+                </div>
+                <div class="team" id="team3" onclick="setCurrentTeam('team3')">
+                    <h2>Marsupilami</h2>
+                    <p class="score">0</p>
+                    <button onclick="doubleScore('team3'); event.stopPropagation();" class="double-btn">Cược x2</button>
+                </div>
+                <div class="team" id="team4" onclick="setCurrentTeam('team4')">
+                    <h2>Đội W</h2>
+                    <p class="score">0</p>
+                    <button onclick="doubleScore('team4'); event.stopPropagation();" class="double-btn">Cược x2</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-area">
+            <p id="question">...</p>
+            <div id="options"></div>
+            <button id="next-btn" onclick="nextQuestion()">Câu tiếp theo ➜</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

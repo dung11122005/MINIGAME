@@ -1,0 +1,145 @@
+[
+    {
+        "id": 1,
+        "question": "Theo nội dung của nhóm, ý tưởng khởi nghiệp được định nghĩa như thế nào?",
+        "options": [
+            "Là ý tưởng xuất phát ngẫu nhiên và không cần dựa trên bất kỳ cơ sở thực tế nào.",
+            "Là một ý tưởng kinh doanh mới nhằm giải quyết một vấn đề hoặc nhu cầu của thị trường thông qua sản phẩm/dịch vụ mới.",
+            "Là việc sao chép hoàn toàn một mô hình kinh doanh đã thành công từ nước ngoài về áp dụng tại địa phương.",
+            "Là một sáng kiến nghệ thuật nhằm mục đích trưng bày và không hướng đến giá trị kinh tế."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 2,
+        "question": "Đâu là yếu tố chủ quan (nội lực cá nhân) góp phần hình thành ý tưởng khởi nghiệp?",
+        "options": [
+            "Nhu cầu thị trường và xu hướng công nghệ.",
+            "Sở thích, đam mê, kiến thức chuyên môn và trải nghiệm cá nhân.",
+            "Sự cạnh tranh gay gắt từ các đối thủ lớn.",
+            "Chính sách hỗ trợ của nhà nước và khoảng trống thị trường."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 3,
+        "question": "Phương pháp SCAMPER giúp phát hiện ý tưởng khởi nghiệp dựa trên tư duy nào?",
+        "options": [
+            "Tạo ra một sản phẩm hoàn toàn mới từ con số 0.",
+            "Sao chép y nguyên mô hình của đối thủ cạnh tranh.",
+            "Cải tiến và tái cấu trúc các sản phẩm/dịch vụ hiện có thông qua 7 lăng kính biến đổi.",
+            "Tập trung vào việc giảm giá thành sản phẩm đến mức thấp nhất."
+        ],
+        "answer": 3
+    },
+    {
+        "id": 4,
+        "question": "Trong phương pháp “Kinh doanh chênh lệch mô hình” (Business Model Arbitrage), tư duy cốt lõi là gì?",
+        "options": [
+            "Sáng tạo ra những sản phẩm chưa từng tồn tại trên thế giới.",
+            "Chờ đợi đối thủ thất bại rồi mới bắt đầu tham gia thị trường.",
+            "Chỉ tập trung vào các thị trường ngách nhỏ hẹp mà không cần quan tâm đến xu hướng thế giới.",
+            "Mang một mô hình đã thành công ở thị trường phát triển về áp dụng và bản địa hóa tại thị trường nội địa."
+        ],
+        "answer": 4
+    },
+    {
+        "id": 5,
+        "question": "Chiến lược “Unbundling” (Phân tách) trong khởi nghiệp thường được sử dụng khi nào?",
+        "options": [
+            "Khi khách hàng phàn nàn sản phẩm quá phức tạp và chỉ muốn trả tiền cho tính năng họ thực sự dùng.",
+            "Khi doanh nghiệp muốn tăng doanh thu bằng cách bán kèm nhiều sản phẩm.",
+            "Khi thị trường đã bão hòa và không còn ngách nào để khai thác.",
+            "Khi khách hàng muốn sự tiện lợi “All-in-one” và trả tiền một lần."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 6,
+        "question": "Mô hình IKIGAI giúp sàng lọc ý tưởng dựa trên giao điểm của 4 yếu tố nào?",
+        "options": [
+            "Thực tế – Khả năng thắng – Đáng giá – Lợi nhuận.",
+            "Đam mê – Chuyên môn – Nhu cầu xã hội – Khả năng kiếm tiền.",
+            "Điểm mạnh – Điểm yếu – Cơ hội – Thách thức.",
+            "Thay thế – Kết hợp – Thích nghi – Loại bỏ."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 7,
+        "question": "Trong bộ lọc R-W-W, yếu tố \"Win\" (Can we Win) dùng để đánh giá điều gì?",
+        "options": [
+            "Sự tồn tại của nhu cầu thị trường.",
+            "Lợi thế cạnh tranh và năng lực nội bộ.",
+            "Khả năng sinh lời và rủi ro tài chính.",
+            "Tính khả thi của công nghệ sản phẩm."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 8,
+        "question": "Theo tài liệu, mối quan hệ giữa “Cơ hội” và “Ý tưởng” được mô tả như thế nào?",
+        "options": [
+            "Chỉ cần có Ý tưởng tốt là chắc chắn thành công, không cần quan tâm Cơ hội.",
+            "Cơ hội là hạt giống, còn ý tưởng là mảnh đất.",
+            "Ý tưởng là điều kiện cần (hạt giống), Cơ hội là điều kiện đủ (mảnh đất/môi trường).",
+            "Chúng hoàn toàn giống nhau và có thể thay thế cho nhau."
+        ],
+        "answer": 3
+    },
+    {
+        "id": 9,
+        "question": "Trong quy trình “Thử nghiệm Tinh gọn” (Lean Validation), mục tiêu của bước MVP là gì?",
+        "options": [
+            "Viết kế hoạch kinh doanh chi tiết để gọi vốn đầu tư.",
+            "Tạo ra sản phẩm hoàn thiện nhất để bán ngay lập tức.",
+            "Kiểm tra giả thuyết giá trị xem khách hàng có thực sự sử dụng và nhận được giá trị không với chi phí thấp nhất.",
+            "Chạy quảng cáo để thu thập email khách hàng mà chưa cần sản phẩm."
+        ],
+        "answer": 3
+    },
+    {
+        "id": 10,
+        "question": "Phân tích SWOT giúp người khởi nghiệp đánh giá yếu tố nào?",
+        "options": [
+            "Sự kết hợp giữa yếu tố nội tại (Điểm mạnh, Điểm yếu) và yếu tố ngoại cảnh (Cơ hội, Thách thức).",
+            "Chỉ đánh giá các yếu tố môi trường bên ngoài.",
+            "Đánh giá khả năng sinh lời và dòng tiền của dự án.",
+            "Chỉ đánh giá yếu tố nội tại của Founder."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 11,
+        "question": "Ý tưởng khởi nghiệp đóng vai trò quan trọng nhất đối với doanh nghiệp mới là gì?",
+        "options": [
+            "Giúp doanh nghiệp có thêm nhiều vốn ngay từ đầu.",
+            "Định hình hướng phát triển và chiến lược của doanh nghiệp.",
+            "Đảm bảo doanh nghiệp không gặp rủi ro trong quá trình hoạt động.",
+            "Giúp doanh nghiệp dễ dàng sao chép mô hình của đối thủ."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 12,
+        "question": "Một ý tưởng khởi nghiệp chất lượng thường tập trung vào điều gì?",
+        "options": [
+            "Tạo ra sản phẩm càng độc đáo càng tốt.",
+            "Giải quyết một vấn đề hoặc nhu cầu thực tế của thị trường.",
+            "Thu hút sự chú ý trên mạng xã hội.",
+            "Sao chép mô hình kinh doanh thành công của đối thủ."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 13,
+        "question": "Quan sát sai lầm của startup trước đó mang lại lợi ích gì?",
+        "options": [
+            "Giúp doanh nghiệp dễ dàng sao chép mô hình thành công.",
+            "Giúp tránh lặp lại thất bại và cải tiến ý tưởng.",
+            "Giúp tăng vốn đầu tư ngay lập tức.",
+            "Giúp doanh nghiệp không cần xây dựng thương hiệu."
+        ],
+        "answer": 2
+    }
+]
