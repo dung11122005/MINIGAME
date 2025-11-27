@@ -7,8 +7,9 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
+    height: 100vh;
     padding: 15px;
+    overflow: hidden;
 }
 
 h1 {
@@ -19,65 +20,9 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Round Header */
-.round-header {
-    text-align: center;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    margin-bottom: 20px;
-    position: relative;
-    border-radius: 15px;
-}
-
-.round-header h1 {
-    font-size: 36px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin: 0;
-}
-
-.back-btn {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.9);
-    color: #667eea;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    font-size: 16px;
-}
-
-.back-btn:hover {
-    background: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-50%) scale(1.05);
-}
-
-.next-round-btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 20px 50px;
-    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    font-size: 24px;
-    font-weight: 700;
-    transition: all 0.3s ease;
-}
-
-.next-round-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(39, 174, 96, 0.5);
-}
-
-/* Container */
 .container {
     max-width: 1600px;
+    height: calc(100vh - 80px);
     margin: 0 auto;
     display: flex;
     gap: 20px;
@@ -444,6 +389,11 @@ h1 {
 @media (max-width: 1200px) {
     .container {
         flex-direction: column;
+        height: auto;
+    }
+
+    body {
+        overflow: auto;
     }
 
     .teams-section {
@@ -462,17 +412,6 @@ h1 {
 
     .question-area {
         width: 100%;
-    }
-
-    .back-btn {
-        position: static;
-        transform: none;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
-
-    .back-btn:hover {
-        transform: scale(1.05);
     }
 }
 
@@ -496,14 +435,5 @@ h1 {
     #options button {
         font-size: 16px;
         padding: 15px;
-    }
-
-    .round-header h1 {
-        font-size: 24px;
-    }
-
-    .back-btn {
-        font-size: 14px;
-        padding: 8px 15px;
     }
 }

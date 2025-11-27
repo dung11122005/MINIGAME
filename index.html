@@ -4,46 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cướp Cờ – 12 Câu Hỏi</title>
+    <title>Trò chơi Cướp Cờ - Khởi Nghiệp</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-container {
+            max-width: 1600px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .game-title {
+            font-size: 48px;
+            color: #fff;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .game-subtitle {
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .rounds-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .round-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: calc(100vh - 220px);
+            overflow-y: auto;
+        }
+
+        .round-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .round-number {
+            font-size: 56px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .round-title {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .round-description {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .round-description ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .round-description li {
+            margin: 6px 0;
+        }
+
+        .round-description p {
+            margin: 10px 0;
+        }
+
+        .winner-info {
+            background: linear-gradient(135deg, #fff4cc 0%, #ffe699 100%);
+            padding: 12px;
+            border-radius: 12px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #e67e22;
+            font-size: 15px;
+        }
+
+        .debate-quote {
+            font-style: italic;
+            color: #667eea;
+            font-weight: 600;
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="teams-section">
-            <p class="choose-team">⚡ Chọn đội trả lời:</p>
-            <div class="teams">
-                <div class="team" id="team1" onclick="setCurrentTeam('team1')">
-                    <h2>Trung tâm văn hóa</h2>
-                    <p class="score">0</p>
-                    <button onclick="doubleScore('team1'); event.stopPropagation();" class="double-btn">Cược x2</button>
-                </div>
-                <div class="team" id="team2" onclick="setCurrentTeam('team2')">
-                    <h2>Quốc Pháp</h2>
-                    <p class="score">0</p>
-                    <button onclick="doubleScore('team2'); event.stopPropagation();" class="double-btn">Cược x2</button>
-                </div>
-                <div class="team" id="team3" onclick="setCurrentTeam('team3')">
-                    <h2>Marsupilami</h2>
-                    <p class="score">0</p>
-                    <button onclick="doubleScore('team3'); event.stopPropagation();" class="double-btn">Cược x2</button>
-                </div>
-                <div class="team" id="team4" onclick="setCurrentTeam('team4')">
-                    <h2>Đội W</h2>
-                    <p class="score">0</p>
-                    <button onclick="doubleScore('team4'); event.stopPropagation();" class="double-btn">Cược x2</button>
-                </div>
-            </div>
-        </div>
+    <div class="menu-container">
+        <h1 class="game-title">🏁 CƯỚP CỜ KHỞI NGHIỆP 🏁</h1>
+        <p class="game-subtitle">Chọn vòng chơi để bắt đầu</p>
 
-        <div class="question-area">
-            <p id="question">...</p>
-            <div id="options"></div>
-            <button id="next-btn" onclick="nextQuestion()">Câu tiếp theo ➜</button>
+        <div class="rounds-grid">
+            <a href="round1.html" class="round-card">
+                <div class="round-number">01</div>
+                <h2 class="round-title">Vòng Tích Lũy Vốn</h2>
+                <div class="round-description">
+                    <p><strong>🎯 Luật chơi:</strong></p>
+                    <ul>
+                        <li>4 đội cướp cờ giành quyền trả lời</li>
+                        <li>✅ Đúng: +$100</li>
+                        <li>❌ Sai: -$50</li>
+                        <li>🔥 Lượt "Đổi đời" (1 lần/đội):
+                            <ul>
+                                <li>Đúng: x2 số tiền hiện có</li>
+                                <li>Sai: ÷2 số tiền hiện có</li>
+                            </ul>
+                        </li>
+                        <li>⚠️ Đặt cược trước khi biết câu hỏi</li>
+                        <li>⚠️ Mất lượt trả lời = mất lần cược</li>
+                    </ul>
+                    <div class="winner-info">
+                        🏆 2 đội điểm cao nhất vào Vòng 2
+                    </div>
+                </div>
+            </a>
+
+            <a href="round2.html" class="round-card">
+                <div class="round-number">02</div>
+                <h2 class="round-title">Vòng Chinh Phục Thị Trường</h2>
+                <div class="round-description">
+                    <p><strong>📊 Quan điểm tranh luận:</strong></p>
+                    <div class="debate-quote">
+                        "BÍ MẬT NHA"
+                    </div>
+                    <ul>
+                        <li>🎲 2 đội cao điểm đấu đối kháng</li>
+                        <li>🎫 Bốc thăm: Bảo vệ/Bác bỏ</li>
+                        <li>⏱️ Chuẩn bị: 2 phút</li>
+                        <li>🎤 Trình bày: Tối đa 3 phút/đội</li>
+                        <li>🗳️ Cả lớp (thị trường) bỏ phiếu</li>
+                    </ul>
+                    <div class="winner-info">
+                        👑 Đội nhiều phiếu hơn chiến thắng
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
