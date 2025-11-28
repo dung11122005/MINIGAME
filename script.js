@@ -147,7 +147,11 @@ function checkAnswer(selected) {
     if (doubleActive[currentTeam]) {
         if (selected === correct) {
             // Đúng: x2
-            score = score * 2;
+            if (score < 0) {
+                score = 0
+            } else {
+                score = score * 2;
+            }
             showFeedback(true, `🎉 ĐÚNG RỒI! Tiền x2 = $${score}!`);
         } else {
             // Sai: chia 2 (xử lý cả số âm)
